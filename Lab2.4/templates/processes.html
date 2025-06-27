@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+        {% for item in items %}
+            <li>Process with name {{ item.name }}, with pid {{ item.pid }} </br>
+                allocated memory {{ item.allocated_memory }}</li>
+            </br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
